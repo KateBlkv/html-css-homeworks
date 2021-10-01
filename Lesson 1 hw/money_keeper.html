@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Money Keeper</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Money Keeper</title>
+        <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body>
+    <header>
+        <nav id="menu"><!-- навигация, меню, может быть в aside -->
+            <!--             ссылки   -->
+            <a href="money_keeper.html">Главная</a> <!--ctrl+d для дублирования строки-->
+            <a href="#">Доходы</a> <!--строчный эл-т -->
+            <a href="#">Расходы</a>
+            <a href="#">Анализ доходов</a>
+            <a href="#">Анализ расходов</a>
+            <a href="#">Авторизация</a>
+        </nav>
+    </header>
+    <aside>
+        <ul> <!-- границы списка -->
+            <li><a href="money_keeper.html">Главная</a></li>
+            <li><a href="in.html">Доходы</a></li>
+            <li><a href="out.html">Расходы</a></li>
+            <li> Анализ доходов
+                <ul>
+                    <li><a href="#">За неделю</a></li>
+                    <li><a href="#">За месяц</a></li>
+                    <li><a href="#">За 3 месяца</a></li>
+                    <li><a href="#">За 6 месяцев</a></li>
+                    <li><a href="#">За год</a></li>
+                    <li><a href="#">За 3 года</a></li>
+                </ul>
+            <li> Анализ расходов
+                <ul>
+                    <li><a href="#">За неделю</a></li>
+                    <li><a href="#">За месяц</a></li>
+                    <li><a href="#">За 3 месяца</a></li>
+                    <li><a href="#">За 6 месяцев</a></li>
+                    <li><a href="#">За год</a></li>
+                    <li><a href="#">За 3 года</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Авторизация</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section>
+            <ul>
+                <li>
+                    <img src="img/1.jpg"
+                         alt="товар1"
+                         height="200" >
+                </li>
+                <li>
+                    <img src="img/money1.jpeg"
+                         alt="товар2"
+                         height="200" >
+                </li>
+                <li>
+                    <img src="img/money3.jpg"
+                         alt="товар3"
+                         height="200">
+                </li>
+            </ul>
+        </section> <!-- блочный эл-т занял всю строку-->
+        <section>
+            <h2>Начать копить</h2>
+            <p>
+                Это первое, с чего стоит начать. Заведите отдельный счет
+                или дебетовую карту, куда сможете перечислять проценты от
+                вашей зарплаты, подработки, аванса или прибыли от бизнеса.
+                Сколько именно — зависит от уровня дохода и обязательных
+                трат. Важно, чтобы это стало привычкой. Поэтому старайтесь
+                откладывать систематически каждый раз, не пропускать и не
+                переносить платежи.
+            </p>
+            <div> <!--Самое-->
+                <div> <!--первый-->
+                    <h2>Самая большая трата</h2>
+                    <div>
+                        <span>Сумма</span>
+                    </div>
+                    <span>Описание</span>
+                    <span>Дата</span>
+                </div>
+                <div>
+                    <h2>Максимальный доход за месяц</h2>
+                    <div>
+                        <span>Сумма</span>
+                    </div>
+                    <span>Описание</span>
+                    <span>Дата</span>
+                </div>
+                <div>
+                    <h2>Максимальное накопление</h2>
+                    <div>
+                        <span>Сумма</span>
+                    </div>
+                    <span>Описание</span>
+                    <span>Дата</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div><a href="#menu">К меню</a></div>
+    <footer></footer>
+    </body>
 </html>
