@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор квартиры</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="district">Введите район, станцию метро или улицу</label>
+            <input id="district"
+                   type="text"
+                   placeholder="Невский пр."
+                   name="district_input">
+        </div>
+        <div>
+            <p>Выберите количество комнат:</p>
+            <label>
+                Студия
+                <input type="checkbox" name="rooms[]" value="0">
+            </label>
+            <label>
+                1
+                <input type="checkbox" name="rooms[]" value="1">
+            </label>
+            <label>
+                2
+                <input type="checkbox" name="rooms[]" value="2">
+            </label>
+            <label>
+                3
+                <input type="checkbox" name="rooms[]" value="3">
+            </label>
+            <label>
+                >3
+                <input type="checkbox" name="rooms[]" value="more">
+            </label>
+        </div>
+        <div>
+            <label for="year">Год сдачи дома:</label>
+            <select name="year" id="year">
+                <option value="first">2021</option>
+                <option value="second" selected>2022</option>
+                <option value="third">2023</option>
+                <option value="third">2024</option>
+                <option value="third">2023</option>
+            </select>
+        </div>
+        <div>
+            <label for="cost">Введите максимальную стоимость, тыс.:</label>
+            <input id="cost"
+                   type="number"
+                   placeholder="4000"
+                   name="cost"
+                   min="1500"
+                   step="500">
+        </div>
+        <div>
+            <label for="square">Введите максимальную общую площадь квартиры, м.кв.:</label>
+            <input id="square"
+                   type="number"
+                   placeholder="40"
+                   name="square"
+                   min="20"
+                   step="1">
+        </div>
+        <div>
+            <p>Выбор отделки:</p>
+            <label>
+                С отделкой
+                <input type="radio" name="decor" value="with"> <!--name одинаковое для всех-->
+            </label>
+            <label>
+                Без отделки
+                <input type="radio" name="decor" value="without">
+            </label>
+        </div>
+        <div>
+            <p>Наличие террасы:</p>
+            <label>
+                С террасой
+                <input type="radio" name="balkon" value="with"> <!--name одинаковое для всех-->
+            </label>
+            <label>
+                Без отделки
+                <input type="radio" name="balkon" value="without">
+            </label>
+        </div>
+        <div>
+           <p>Выберете класс недвижимости:</p>
+            <label>
+                Бизнес-класс
+                <input type="checkbox" name="class[]" value="business">
+            </label>
+            <label>
+                Премиум
+                <input type="checkbox" name="class[]" value="premium">
+            </label>
+            <label>
+                Deluxe
+                <input type="checkbox" name="class[]" value="deluxe">
+            </label>
+        </div>
+        <div>
+            <p>Выберете этаж:</p>
+            <label>
+                <input id="floor1"
+                       type="number"
+                       name="floor2"
+                       min="1"
+                       placeholder="1"> по
+                <input id="floor2"
+                       type="number"
+                       name="floor2"
+                       min="1"
+                       placeholder="2">
+                <input type="checkbox" name="floor[]" value="floor">
+            </label>
+            <label>
+                Не первый
+                <input type="checkbox" name="floor[]" value="not_first">
+            </label>
+            <label>
+                Не последний
+                <input type="checkbox" name="floor[]" value="not_last">
+            </label>
+        </div>
+    </form>
+</body>
+</html>
