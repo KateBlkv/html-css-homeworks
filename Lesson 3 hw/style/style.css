@@ -1,0 +1,98 @@
+#menu a {
+    color: deeppink;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+li.head {
+    display: inline-block;
+    padding: 0 10px;
+    width: 100px;
+    background-color: yellow;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 3px solid transparent;
+}
+
+#menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: yellow;
+}
+
+.view {
+    display: none;
+}
+
+li.head:hover {
+    border-bottom: 3px solid deeppink;
+}
+
+body {
+    margin: 0;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/396/471/707/flowers-white-white-pink-background-pink-hd-wallpaper-preview.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size: 1757px;
+}
+
+img {
+    border-radius: 5px;
+    border: 2px solid crimson;
+    padding: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.text {
+    display: block;
+    max-width: 690px;
+    margin: 10px auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.link {
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    text-decoration: none;
+    color: crimson;
+}
+
+.img {
+    max-width: 690px;
+}
+
+footer a {
+    display: inline-block;
+    border-radius: 5px;
+    border: 3px solid crimson;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+.special {
+    background-color: yellow;
+}
+footer > div {
+    width: 690px;
+    margin: 0 auto;
+}
+.footer {
+    text-align: center;
+}
