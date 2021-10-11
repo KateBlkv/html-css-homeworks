@@ -1,0 +1,27 @@
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    min-width: 20%;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    background-color: white;
+    color: darkviolet;
+}
+#marked{
+    background-color: violet;
+}
+
+/*
+.changed {
+    min-width: 100%;
+}*/
