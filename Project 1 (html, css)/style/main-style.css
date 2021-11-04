@@ -1,0 +1,178 @@
+@import "flex.css";
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: dodgerblue;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    }
+nav a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+    }
+
+.div-h {
+    display: flex;
+    width: 75%;
+
+}
+
+.ahidden2{
+    width: 25%;
+}
+
+.ahidden{
+    width: 33%;
+}
+
+.ahidden, .ahidden2 {
+    /*display: flex;*/
+    text-decoration: none;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+section {
+    border: 1px solid dodgerblue;
+    border-radius: 15px;
+    padding: 10px;
+    /*margin: 1rem;*/
+}
+
+
+.marginL {
+    margin-left: .5rem;
+}
+.marginR {
+    margin-right: .5rem;
+}
+
+.hidden {
+    display: none;
+}
+img {
+    object-fit: contain;
+    width: 100%;
+}
+/*
+.amain {
+    display: none;
+    text-decoration: none;
+    min-width: 100%;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+}
+*/
+footer{
+    display: flex;
+    padding: 1rem;
+    margin-top: .5rem;
+    background-color: dodgerblue;
+    justify-content: center;
+    border-radius: 30px;
+}
+a.afooter {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    color: dodgerblue;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.marginT {
+    margin-top: .5rem;
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+    background-color: seagreen;
+    justify-content: space-around;
+    border-radius: 30px;
+    margin-top: .5rem;
+}
+
+.start a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+@media (max-width: 599px) {
+
+    .div-h{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ahidden{
+        width: 100%;
+    }
+    .navbar{
+        background-color: white;
+
+    }
+    nav a {
+        min-width: 100%;
+        border-radius: 15px;
+        border: 2px solid whitesmoke;
+        background-color: dodgerblue;
+    }
+    .ahidden2:hover + .div-h,
+    .ahidden2:active + .div-h,
+    .div-h:hover,
+    .div-h:active {
+        display: flex;
+    }
+
+    .col2-12{
+        max-width: 100%;
+    }
+
+    .wrap599 {
+        flex-wrap: wrap;
+    }
+    .start{
+        margin-top: 0;
+    }
+
+
+
+
+}
+/*
+button {
+    margin: auto 0;
+}*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контроль бюджета</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+<header>
+    <nav class="navbar" id="navbar">
+        <a class="ahidden2" href="main.html">Главная</a>
+        <div class="div-h">
+            <a class="ahidden" href="#">Доходы</a>
+            <a class="ahidden" href="#">Расходы</a>
+            <a class="ahidden" href="#">Анализ бюджета</a>
+        </div>
+        </nav>
+</header>
+<main class="main">
+    <div class="form-wrap flex-column">
+    <h3>Добавить запись</h3>
+    <form class="flex-column gap" action="#" method="get">
+        <div class="flex-row date gap">
+            <p class="title">Дата:</p>
+            <input type="date">
+        </div>
+        <div class="flex-row in-out gap paddingL">
+            <p><input checked type="checkbox">Доход</p>
+            <p><input type="checkbox">Расход</p>
+        </div>
+        <div class="flex-row amount gap">
+            <p class="title">Сумма:</p>
+            <input type="number" name="sum" placeholder="250" value="">
+            <select id="money">
+                <option selected value="rubles">руб.</option>
+                <option value="dollars">дол.</option>
+                <option value="euro">евро</option>
+            </select>
+        </div>
+        <div class="flex-row category gap">
+            <p class="title">Категория:</p>
+        <input type="text" name="category" placeholder="к/у" value="">
+        </div>
+        <div class="flex-row comment gap">
+            <p class="title">Дополнительно:</p>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        <div class="flex-row button paddingL ">
+            <button type="submit">Добавить</button>
+        </div>
+    </form>
+    </div>
+</main>
+<footer>
+    <a class="afooter" href="#navbar">Вверх</a>
+</footer>
+</body>
+</html>
